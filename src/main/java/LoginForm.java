@@ -44,6 +44,11 @@ public class LoginForm extends javax.swing.JFrame {
         jLabelUsuario.setText("Usuário");
 
         jTextFieldUsuario.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jTextFieldUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldUsuarioActionPerformed(evt);
+            }
+        });
 
         jLabelSenha.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabelSenha.setText("Senha");
@@ -122,6 +127,10 @@ public class LoginForm extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos");
         }
     }//GEN-LAST:event_jButtonLoginActionPerformed
+
+    private void jTextFieldUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldUsuarioActionPerformed
 
     /**
      * @param args the command line arguments

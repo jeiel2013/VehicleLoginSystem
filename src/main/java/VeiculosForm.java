@@ -1,4 +1,6 @@
 
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -18,6 +20,18 @@ public class VeiculosForm extends javax.swing.JFrame {
      */
     public VeiculosForm() {
         initComponents();
+        
+        jTextFieldAnoFabricacao.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+            char c = e.getKeyChar();
+            if (!Character.isDigit(c)) {
+                e.consume();
+            }
+            if (jTextFieldAnoFabricacao.getText().length() >= 4) {
+                e.consume();
+            }
+        }
+    });
     }
     
     public void limparForm() {

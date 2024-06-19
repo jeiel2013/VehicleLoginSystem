@@ -36,6 +36,7 @@ public class LoginForm extends javax.swing.JFrame {
         jButtonLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Tela de Login");
 
         jLabelLogin.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabelLogin.setText("Login");
